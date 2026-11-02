@@ -1,19 +1,22 @@
 <script setup>
-import { ref } from 'vue';
-
-const count = ref(0);
+import DataBinding from './components/DataBinding.vue';
+import ConditionalRendering from './components/ConditionalRendering.vue';
+import ListRendering from './components/ListRendering.vue';
+import Ex from './components/Ex.vue';
 </script>
 
 <template>
-  <div @click="count++" class="btn-cnt">count is {{ count }}</div>
-  <button @click="count = 0">Count Reset</button>
+  <h1>APP Component</h1>
+  <!-- <DataBinding></DataBinding> -->
+  <!-- <DataBinding/>로 적어도 됨 -->
+  <!-- <ConditionalRendering/> -->
+  <!-- <ListRendering/> -->
+  <!-- 이거 입력하면 import 자동으로 됨 -->
+  <h3>TabUI</h3>
+  <Ex/>
 </template>
 
 <style>
-.btn-cnt{
-  width: 100px;
-  height: 100px;
-  background-color: aliceblue;
-}
+
 </style>
-// 전체적으로 들어가는 css는 style.css에 입력하면 됨
+<!-- components 안 vue 파일 이름은 대문자로 시작하는 파스칼 기법으로 작성 -->
