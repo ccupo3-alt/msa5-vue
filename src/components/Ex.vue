@@ -34,7 +34,7 @@ const toggleNoti = () => {
 <p v-if="noti">게시판 페이지입니다.</p>
 </template>
 
-<style>
+<style scoped>
   .btn{
     display: flex;
     margin: 20px auto;
